@@ -1,4 +1,4 @@
-ls
+
 /* Part 1 */
 function right(number) {
   if (number === 1) {
@@ -41,6 +41,28 @@ function checkPwd() {
   }
   else {
     textChange.innerHTML = "The information is correct!"
+  }
+}
+
+/* Part 6 */
+function sphereVolume() {
+  let radius = document.getElementById("radius").value;
+  let volume;
+
+  
+
+  console.log(typeof radius);
+  if(isNaN(radius) || radius == "") {
+    alert('Incorrect Input! Try again!')
+  }
+  else {
+    
+    radius = Math.abs(radius);
+    volume = (4/3) * Math.PI * Math.pow(radius, 3);
+    volume = volume.toFixed(4);
+
+    alert('The volume is ' + volume);
+    
   }
 }
 
