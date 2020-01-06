@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">    
-    <script src="script.js"></script>
   </head>
   <body>
     <!-- part 1 -->
@@ -23,8 +22,14 @@
       Email:<br>
       <input type="email" name="email"><br>
       Password:<br>
-      <input type="password" name="password"><br>
-      <input type="submit" name="submit"><br>
+      <input type="password" name="password" id="password"><br>
+
+      <!-- part 4 -->
+      <button type="button" onclick="checkPwd()">Submit</button><br>
     </form>
+
+    <h1 id="textChange">Is the information correct?</h1>
+
+    <script src="script.js"></script>
   </body>
 </html>
