@@ -1,4 +1,4 @@
-
+ls
 /* Part 1 */
 function right(number) {
   if (number === 1) {
