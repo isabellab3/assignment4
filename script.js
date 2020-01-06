@@ -1,11 +1,19 @@
 function handleHover() {
-    alert('Hey, I told you not to hover over me!')
+  alert('Hey, I told you not to hover over me!')
+}
+
+function right(number) {
+  if (number === 1) {
+    document.getElementById("right").innerHTML = "I'm right";
+  } else {
+    document.getElementById("right").innerHTML = "No, I'm right!";
+  }
 }
 
 // run once document has finished loading
 window.onload=function() {
-    const text = document.getElementById("text")
-    text.addEventListener("mouseover", handleHover, false)     
+  const text = document.getElementById("text")
+  text.addEventListener("mouseover", handleHover, false)     
 }
 
 
