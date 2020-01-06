@@ -1,7 +1,5 @@
-function handleHover() {
-  alert('Hey, I told you not to hover over me!')
-}
 
+/* Part 1 */
 function right(number) {
   if (number === 1) {
     document.getElementById("right").innerHTML = "I'm right";
@@ -10,34 +8,14 @@ function right(number) {
   }
 }
 
-// run once document has finished loading
+/* Part 2 */
+function handleHover() {
+  alert('Hey, I told you not to hover over me!')
+}
+
+// run once document finishes loading
 window.onload=function() {
   const text = document.getElementById("text")
   text.addEventListener("mouseover", handleHover, false)     
 }
 
-
-
-/* 
-
-
-function addRow() {
-    // access main grid
-    let mainGrid = document.getElementById("main-grid")
-    // create new row to populate
-    let newRow = document.createElement("tr")
-    
-    // populate new row with squares/cells
-    for (let i=0; i < numCols; i++) {
-        let cell = document.createElement("td")
-        newRow.appendChild(cell)
-    }
-
-    // append new element to dom
-    mainGrid.appendChild(newRow)
-    numRows++
-}
-
-
-
-*/
